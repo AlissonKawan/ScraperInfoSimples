@@ -1,0 +1,45 @@
+===================================================================
+   REQUISITOS E EXIGÊNCIAS DO PROCESSO SELETIVO INFOSIMPLES 2026
+===================================================================
+
+1. OBJETIVO PRINCIPAL:
+- Construir um programa automatizado (Web Scraper).
+- O robô deve acessar a página do produto Stellarcraft.
+- Fazer o parsing, extrair as informações e salvá-las estruturadas.
+- O arquivo de saída DEVE se chamar obrigatoriamente: "produto.json".
+
+2. ESTRUTURA COMPLETA E TIPAGEM DO JSON EXIGIDA:
+- title (STRING): Título principal do produto.
+- brand (STRING): Nome da marca do produto.
+- categories (ARRAY DE STRINGS): Categorias encontradas no produto.
+- description (STRING): Texto descritivo do produto.
+- url (STRING): URL da página do produto.
+- reviews_average_score (FLOAT): Nota média geral das avaliações.
+- skus (ARRAY DE OBJETOS) contendo:
+    * name (STRING): Nome da variação.
+    * current_price (FLOAT ou NULL): Preço atual (NULL se indisponível).
+    * old_price (FLOAT ou NULL): Preço antigo (NULL se indisponível).
+    * available (BOOLEAN): true se houver estoque, false se indisponível.
+- specification (ARRAY DE OBJETOS) contendo:
+    * label (STRING): Nome da propriedade técnica.
+    * value (STRING): Texto/valor da propriedade técnica.
+- reviews (ARRAY DE OBJETOS) contendo:
+    * name (STRING): Nome da pessoa que avaliou.
+    * date (STRING): Data da avaliação.
+    * score (INT): Número de estrelas dadas (de 1 a 5).
+    * text (STRING): Texto do comentário.
+
+3. REGRAS DE ENTREGA E FORMATO:
+- O código-fonte deve ser enviado compactado (.zip) ou via repositório Git.
+- ATENÇÃO: Enviar APENAS o código-fonte.
+- PROIBIDO: O envio de arquivos executáveis (binários) ou pastas contendo as 
+  bibliotecas externas (como as pastas /target ou /node_modules) acarreta 
+  em DESCLASSIFICAÇÃO imediata.
+
+4. FORMULÁRIO DE RESPOSTA (REQUISITOS ADICIONAIS):
+- Preencher Nome completo e E-mail cadastrado.
+- Incluir os Prompts e Respostas da IA utilizados no desenvolvimento.
+- Responder textualmente às seguintes perguntas do edital:
+    Pergunta A: Por que você acha que web scraping é um processo relevante, hoje em dia?
+    Pergunta B: Quais são as principais dificuldades de manter um scraper funcionando?
+===================================================================
