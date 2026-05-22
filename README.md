@@ -1,6 +1,5 @@
-===================================================================
+
    PROMPTS DE IA UTILIZADOS NO DESENVOLVIMENTO
-===================================================================
 
 Durante o desenvolvimento deste Web Scraper, utilizei IA (LLM) como um assistente de engenharia em quatro etapas principais, com foco em estruturação, clean code e validação de regras de negócio:
 
@@ -15,4 +14,3 @@ Prompt utilizado: "Revise rigorosamente as exigências técnicas do edital da In
 
 4. ETAPA DE BUILD E CONTROLE DE VERSÃO (GIT)
 Prompt utilizado: "Revise a estrutura de pastas do meu projeto Maven e gere um arquivo '.gitignore' focado em projetos Java. Faça uma validação de erros para garantir que nenhum arquivo binário executável ou a pasta '/target' suba para o repositório, evitando a desclassificação no processo."
-===================================================================
